@@ -6,11 +6,15 @@
 
 <br />
 
+Software developer focused on systems engineering, cross-platform applications, and networked software.
+
+<br />
+
 <table>
   <tr>
     <td width="33%" valign="top">
       <sub>01 / SYSTEMS</sub><br /><br />
-      Rust<br />Backend engineering<br />Cryptographic systems
+      Rust<br />Backend engineering<br />Cryptographic protocols
     </td>
     <td width="33%" valign="top">
       <sub>02 / APPLICATIONS</sub><br /><br />
@@ -22,7 +26,3 @@
     </td>
   </tr>
 </table>
-
-<br />
-
-<p align="center"><sub>SOFTWARE ENGINEERING</sub></p>
