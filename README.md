@@ -36,17 +36,17 @@
 <br />
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/thisisroot/thisisroot/output/telemetry-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/thisisroot/thisisroot/output/telemetry-light.svg" />
-  <img src="https://raw.githubusercontent.com/thisisroot/thisisroot/output/telemetry-dark.svg" width="100%" alt="Telemetry — GitHub activity over the last 12 months, refreshed daily" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/stack-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/stack-light.svg" />
+  <img src="./assets/stack-dark.svg" width="100%" alt="Stack — languages: Rust, Dart, Go, TypeScript, Python · frameworks: Flutter, Axum, React, Django · protocols: REST, WebSockets, OpenAPI, JSON Schema, MLS · tooling: Docker, PostgreSQL, Linux, Git, Neovim" />
 </picture>
 
 <br /><br />
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/footer-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="./assets/footer-light.svg" />
-  <img src="./assets/footer-dark.svg" width="100%" alt="Less magic. More ownership." />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/thisisroot/thisisroot/output/telemetry-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/thisisroot/thisisroot/output/telemetry-light.svg" />
+  <img src="https://raw.githubusercontent.com/thisisroot/thisisroot/output/telemetry-dark.svg" width="100%" alt="Telemetry — GitHub activity over the last 12 months, with a snake eating the contribution graph. Refreshed daily." />
 </picture>
 
 

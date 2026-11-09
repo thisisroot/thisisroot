@@ -1,6 +1,6 @@
 name: telemetry
 
-# Rebuilds the live activity panel and publishes it to the `output` branch,
+# Rebuilds the live activity panel (stats + contribution snake) and publishes it to the `output` branch,
 # which README.md links to.
 
 on:
@@ -27,8 +27,14 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Render telemetry
-        run: python3 scripts/profile.py telemetry --out dist
+      - name: Feed the snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: snk/snake.svg
+
+      - name: Render telemetry (snake embedded, recoloured per theme)
+        run: python3 scripts/profile.py telemetry --out dist --snake snk/snake.svg
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_USER: ${{ github.repository_owner }}
