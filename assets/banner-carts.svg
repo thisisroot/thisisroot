@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="64" viewBox="0 0 900 64" role="img" aria-label="SELECT A CARTRIDGE">
+<title>SELECT A CARTRIDGE</title>
+<defs>
+<pattern id="scan" width="3" height="3" patternUnits="userSpaceOnUse"><rect width="3" height="1" fill="#000" fill-opacity=".35"/></pattern>
+<radialGradient id="vig" cx="50%" cy="50%" r="72%"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".7"/></radialGradient>
+<radialGradient id="tint" cx="50%" cy="45%" r="65%"><stop offset="0" stop-color="#33FF66" stop-opacity=".07"/><stop offset="1" stop-color="#33FF66" stop-opacity="0"/></radialGradient>
+<linearGradient id="roll" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#33FF66" stop-opacity="0"/><stop offset=".5" stop-color="#33FF66" stop-opacity=".05"/><stop offset="1" stop-color="#33FF66" stop-opacity="0"/></linearGradient>
+<filter id="glow" x="-5%" y="-5%" width="110%" height="110%"><feGaussianBlur stdDeviation="1.1" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<clipPath id="screen"><rect width="900" height="64" rx="16"/></clipPath>
+</defs>
+<g clip-path="url(#screen)" shape-rendering="crispEdges">
+<rect width="900" height="64" fill="#050A06"/>
+<rect width="900" height="64" fill="url(#tint)"/>
+<g filter="url(#glow)">
+<animate attributeName="opacity" values="1;.96;1;1;.98;1" keyTimes="0;.02;.04;.6;.62;1" dur="4s" repeatCount="indefinite"/>
+<path d="M28 25h2v2h-2zM28 27h4v2h-4zM28 29h6v2h-6zM28 31h8v2h-8zM28 33h6v2h-6zM28 35h4v2h-4zM28 37h2v2h-2z" fill="#33FF66" opacity="1"><animate attributeName="opacity" values="1;0" dur="1s" calcMode="discrete" repeatCount="indefinite"/></path><path d="M55 22h12v3h-12zM52 25h3v3h-3zM52 28h3v3h-3zM55 31h9v3h-9zM64 34h3v3h-3zM64 37h3v3h-3zM52 40h12v3h-12zM70 22h15v3h-15zM70 25h3v3h-3zM70 28h3v3h-3zM70 31h12v3h-12zM70 34h3v3h-3zM70 37h3v3h-3zM70 40h15v3h-15zM88 22h3v3h-3zM88 25h3v3h-3zM88 28h3v3h-3zM88 31h3v3h-3zM88 34h3v3h-3zM88 37h3v3h-3zM88 40h15v3h-15zM106 22h15v3h-15zM106 25h3v3h-3zM106 28h3v3h-3zM106 31h12v3h-12zM106 34h3v3h-3zM106 37h3v3h-3zM106 40h15v3h-15zM127 22h9v3h-9zM124 25h3v3h-3zM136 25h3v3h-3zM124 28h3v3h-3zM124 31h3v3h-3zM124 34h3v3h-3zM124 37h3v3h-3zM136 37h3v3h-3zM127 40h9v3h-9zM142 22h15v3h-15zM148 25h3v3h-3zM148 28h3v3h-3zM148 31h3v3h-3zM148 34h3v3h-3zM148 37h3v3h-3zM148 40h3v3h-3zM181 22h9v3h-9zM178 25h3v3h-3zM190 25h3v3h-3zM178 28h3v3h-3zM190 28h3v3h-3zM178 31h15v3h-15zM178 34h3v3h-3zM190 34h3v3h-3zM178 37h3v3h-3zM190 37h3v3h-3zM178 40h3v3h-3zM190 40h3v3h-3zM217 22h9v3h-9zM214 25h3v3h-3zM226 25h3v3h-3zM214 28h3v3h-3zM214 31h3v3h-3zM214 34h3v3h-3zM214 37h3v3h-3zM226 37h3v3h-3zM217 40h9v3h-9zM235 22h9v3h-9zM232 25h3v3h-3zM244 25h3v3h-3zM232 28h3v3h-3zM244 28h3v3h-3zM232 31h15v3h-15zM232 34h3v3h-3zM244 34h3v3h-3zM232 37h3v3h-3zM244 37h3v3h-3zM232 40h3v3h-3zM244 40h3v3h-3zM250 22h12v3h-12zM250 25h3v3h-3zM262 25h3v3h-3zM250 28h3v3h-3zM262 28h3v3h-3zM250 31h12v3h-12zM250 34h3v3h-3zM256 34h3v3h-3zM250 37h3v3h-3zM259 37h3v3h-3zM250 40h3v3h-3zM262 40h3v3h-3zM268 22h15v3h-15zM274 25h3v3h-3zM274 28h3v3h-3zM274 31h3v3h-3zM274 34h3v3h-3zM274 37h3v3h-3zM274 40h3v3h-3zM286 22h12v3h-12zM286 25h3v3h-3zM298 25h3v3h-3zM286 28h3v3h-3zM298 28h3v3h-3zM286 31h12v3h-12zM286 34h3v3h-3zM292 34h3v3h-3zM286 37h3v3h-3zM295 37h3v3h-3zM286 40h3v3h-3zM298 40h3v3h-3zM307 22h9v3h-9zM310 25h3v3h-3zM310 28h3v3h-3zM310 31h3v3h-3zM310 34h3v3h-3zM310 37h3v3h-3zM307 40h9v3h-9zM322 22h12v3h-12zM322 25h3v3h-3zM334 25h3v3h-3zM322 28h3v3h-3zM334 28h3v3h-3zM322 31h3v3h-3zM334 31h3v3h-3zM322 34h3v3h-3zM334 34h3v3h-3zM322 37h3v3h-3zM334 37h3v3h-3zM322 40h12v3h-12zM343 22h9v3h-9zM340 25h3v3h-3zM352 25h3v3h-3zM340 28h3v3h-3zM340 31h3v3h-3zM346 31h9v3h-9zM340 34h3v3h-3zM352 34h3v3h-3zM340 37h3v3h-3zM352 37h3v3h-3zM343 40h12v3h-12zM358 22h15v3h-15zM358 25h3v3h-3zM358 28h3v3h-3zM358 31h12v3h-12zM358 34h3v3h-3zM358 37h3v3h-3zM358 40h15v3h-15z" fill="#33FF66" /><path d="M397 32h475" stroke="#33FF66" stroke-opacity=".35" stroke-width="3" stroke-dasharray="6 6"/>
+</g>
+
+<rect width="900" height="64" fill="url(#scan)"/>
+<rect width="900" height="64" fill="url(#vig)"/>
+</g>
+<rect x="1.5" y="1.5" width="897" height="61" rx="15" fill="none" stroke="#1D7A3A" stroke-opacity=".6" stroke-width="3"/>
+</svg>
