@@ -1,52 +1,57 @@
-<div align="center">
-
-<img src="./assets/hero.svg" width="100%" alt="ROOT BIOS boot screen: THISISROOT — systems, cross-platform, networked software. Press start." />
-
-<a href="https://github.com/thisisroot?tab=repositories"><img src="https://komarev.com/ghpvc/?username=thisisroot&label=YOU%20ARE%20VISITOR%20NO.&color=1d7a3a&style=flat-square" alt="visitor counter" /></a>
-
-</div>
-
-<br />
-
-<img src="./assets/whoami.svg" width="100%" alt="whoami — class: systems engineer · stack: Rust, Flutter, Dart · network: REST, WebSockets, OpenAPI · crypto: MLS (in progress) · quest: Trust, a self-hosted messenger · WM: Hyprland · term: kitty + Neovim · playing since 2017 · motto: less magic, more ownership." />
-
-<br /><br />
-
-<img src="./assets/banner-carts.svg" width="100%" alt="Select a cartridge" />
-
-<div align="center">
-  <a href="https://github.com/thisisroot/trust-server"><img src="./assets/carts/trust-server.svg" width="49%" alt="trust-server — Rust backend for accounts, messaging, realtime delivery and media" /></a>
-  <a href="https://github.com/thisisroot/trust-deploy"><img src="./assets/carts/trust-deploy.svg" width="49%" alt="trust-deploy — self-hosting kit for the Trust stack" /></a>
-  <a href="https://github.com/thisisroot/zdm"><img src="./assets/carts/zdm.svg" width="49%" alt="zdm — segmented download manager" /></a>
-  <a href="https://github.com/thisisroot/paqet-i"><img src="./assets/carts/paqet-i.svg" width="49%" alt="paqet-i — raw packet transport" /></a>
-  <img src="./assets/carts/trust-client.svg" width="49%" alt="trust-client (private) — one Flutter app for mobile, desktop and web" />
-  <img src="./assets/carts/trust-protocol.svg" width="49%" alt="trust-protocol (private) — versioned REST + WebSocket contracts" />
-</div>
-
-<br />
-
-<img src="./assets/inventory.svg" width="100%" alt="Inventory — weapons: Rust, Dart, Go, TypeScript, Python · armor: Flutter, Docker, PostgreSQL, Linux, Neovim · spells: REST, WebSockets, OpenAPI, JSON Schema, MLS" />
-
-<br /><br />
-
-<img src="https://raw.githubusercontent.com/thisisroot/thisisroot/output/hiscore.svg" width="100%" alt="High scores — live GitHub stats, refreshed daily" />
-
-<br /><br />
-
-<img src="./assets/banner-arcade.svg" width="100%" alt="SNAKE.EXE — eating my commits" />
-
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/thisisroot/thisisroot/output/snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/thisisroot/thisisroot/output/snake-light.svg" />
-  <img src="https://raw.githubusercontent.com/thisisroot/thisisroot/output/snake-dark.svg" width="100%" alt="A snake eating the contribution graph" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/hero-light.svg" />
+  <img src="./assets/hero-dark.svg" width="100%" alt="THISISROOT — systems engineering, cross-platform apps, networked software. Rust · Flutter · Dart · REST · WebSockets · OpenAPI." />
 </picture>
 
 <br /><br />
 
-<img src="./assets/footer.svg" width="100%" alt="Thanks for playing — insert coin to continue. Less magic. More ownership." />
+<a href="https://github.com/Hilbert-Forge">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/project-hilbertforge-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/project-hilbertforge-light.svg" />
+  <img src="./assets/project-hilbertforge-dark.svg" width="100%" alt="01 Hilbert Forge — QForge: inverse materials design (Rust, Python, ML)" />
+</picture>
+</a>
+
+
+<a href="https://github.com/thisisroot/zdm">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/project-zdm-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/project-zdm-light.svg" />
+  <img src="./assets/project-zdm-dark.svg" width="100%" alt="02 ZDM — segmented download manager (Rust, React, TypeScript)" />
+</picture>
+</a>
+
+
+<a href="https://github.com/thisisroot/trust-server">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/project-trust-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/project-trust-light.svg" />
+  <img src="./assets/project-trust-dark.svg" width="100%" alt="03 Trust — self-hosted, cross-platform messenger (Rust, Flutter, MLS)" />
+</picture>
+</a>
+
+
+<br />
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/thisisroot/thisisroot/output/telemetry-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/thisisroot/thisisroot/output/telemetry-light.svg" />
+  <img src="https://raw.githubusercontent.com/thisisroot/thisisroot/output/telemetry-dark.svg" width="100%" alt="Telemetry — GitHub activity over the last 12 months, refreshed daily" />
+</picture>
+
+<br /><br />
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/footer-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/footer-light.svg" />
+  <img src="./assets/footer-dark.svg" width="100%" alt="Less magic. More ownership." />
+</picture>
+
 
 <!--
-  Every graphic here is generated: edit the CONTENT section of scripts/arcade.py,
-  then run `python scripts/arcade.py static`. The hi-score table and snake are
-  rebuilt daily by .github/workflows/arcade.yml onto the `output` branch.
+  All graphics are generated. Edit the CONTENT section of scripts/profile.py,
+  then run: python scripts/profile.py static
+  Telemetry is rebuilt daily by .github/workflows/telemetry.yml onto the `output` branch.
 -->
