@@ -1,79 +1,41 @@
-
 <div align="center">
 
-# ROOT // 0X00
+<sub>INDEPENDENT BUILDER · SYSTEMS / PRODUCT</sub>
 
-### Backend Engineer · ML Engineer · Physics Student
+# `thisisroot`
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&duration=3000&pause=1000&color=A78BFA&center=true&vCenter=true&width=600&lines=Building+intelligent+systems.;Exploring+the+quantum+world.;Engineering+software+that+scales.;Breaking+things.+Making+them+better." />
+I build software where the protocol, product, and infrastructure are designed as one system.
 
-<br/>
+<br />
 
-[![GitHub](https://img.shields.io/badge/GitHub-thisisroot-181717?style=for-the-badge&logo=github)](https://github.com/thisisroot)
+**Currently:** Trust — a cross-platform messenger built to be self-hosted.
 
 </div>
 
 ---
 
-## `$ whoami`
+### `trust/`
 
-```python
-class Root:
-    role = ["Backend Engineer", "ML Engineer"]
-    interests = [
-        "Machine Learning",
-        "Distributed Systems",
-        "Quantum Computing",
-        "Physics",
-        "Systems Programming"
-    ]
+One product, split along real boundaries: a Flutter client, a Rust reference server, a versioned wire contract, and a shared cryptography core.
 
-    currently = "Building something interesting"
-    philosophy = "Understand deeply. Build carefully."
+| Surface | What I'm working on |
+| --- | --- |
+| [Client](https://github.com/thisisroot/trust-client) | One app across mobile, desktop, and web; motion-led, monochrome interface. |
+| [Protocol](https://github.com/thisisroot/trust-protocol) | Versioned REST + WebSocket contracts, with schemas as the source of truth. |
+| [Server](https://github.com/thisisroot/trust-server) | Rust backend for accounts, messaging, realtime delivery, and media. |
+| [Crypto](https://github.com/thisisroot/trust-crypto) | Shared Rust MLS core, intended to give every client one cryptographic implementation. |
+| [Deployment](https://github.com/thisisroot/trust-deploy) | Self-hosting pieces for running the service on your own infrastructure. |
+
+<br />
+
+```text
+DESIGN BIAS
+  small, explicit contracts
+  replaceable implementations
+  self-hosting as a first-class path
+  polish in the details, not decoration
 ```
 
-## `$ projects`
+The encryption boundary is a core design goal; the MLS work is still being integrated into the app.
 
-| Project | Description | Stack |
-|---|---|---|
-| [ZDM](https://github.com/thisisroot/zdm) | Segmented download manager | Rust, React, TypeScript |
-| [paqet-i](https://github.com/thisisroot/paqet-i) | Raw packet transport | Go |
-| [trust-server](https://github.com/thisisroot/trust-server) | E2E communication backend | Rust |
-| [trust-deploy](https://github.com/thisisroot/trust-deploy) | Infrastructure & deployment | Docker |
-
-## `$ tech-stack`
-
-**Languages**
-
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Rust](https://img.shields.io/badge/Rust-000000?style=flat-square&logo=rust)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus)
-
-**Tools & Technologies**
-
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Django](https://img.shields.io/badge/Django-092E20?style=flat-square&logo=django&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)
-
-## `$ github-stats`
-
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=thisisroot&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" />
-
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=thisisroot&layout=compact&theme=tokyonight&hide_border=true" />
-
-<img width="90%" src="https://streak-stats.demolab.com?user=thisisroot&theme=tokyonight&hide_border=true" />
-
-</div>
-
----
-
-<div align="center">
-
-*"The universe is under no obligation to make sense to you."*
-
-</div>
+<div align="right"><sub>LESS MAGIC. MORE OWNERSHIP.</sub></div>
