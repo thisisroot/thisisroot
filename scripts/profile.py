@@ -72,8 +72,8 @@ PROJECTS = [  # slug, name, description lines, tags
       "get back candidate crystal structures, checked and analysed."],
      ["RUST", "PYTHON", "ML"]),
     ("zdm", "ZDM",
-     ["Segmented download manager. The best download manager ever.",
-      "zeddm.ir"],
+     ["Downloads file segments in parallel",
+      "and assembles them into one file."],
      ["RUST", "REACT", "TYPESCRIPT"]),
     ("trust", "TRUST",
      ["Self-hosted, cross-platform messenger. Flutter client, Rust",
@@ -215,7 +215,30 @@ def hero(t) -> str:
 
 
 # ───────────────────────────── projects ─────────────────────────────
-def project(t, i, name, lines, tags) -> str:
+def project_diagram(t, slug):
+    ink, accent = t["muted"], t["accent"]
+    if slug == "hilbertforge":
+        drawing = '<path d="M2 22h30m-5-5 5 5-5 5 M52 12l20-10 20 10v22L72 44 52 34z M52 12l20 10 20-10 M72 22v22"/>'
+        for x, y in [(52,12),(72,2),(92,12),(52,34),(72,22),(92,34),(72,44)]:
+            drawing += f'<circle cx="{x}" cy="{y}" r="3" fill="{accent}" stroke="none"/>'
+    elif slug == "zdm":
+        drawing = '<path d="M51 5h8v36h-8m8-18h16 M80 9h14l8 8v20H80z M94 9v9h8"/>'
+        for row, length in enumerate([24, 38, 18, 32]):
+            y = 5 + 12 * row
+            drawing += (f'<path d="M0 {y}h46" stroke="{t["rule"]}" stroke-width="4"/>'
+                        f'<rect y="{y-2}" width="{length}" height="4" fill="{accent}" stroke="none">'
+                        f'<animate attributeName="width" values="{length};46;4;{length}" '
+                        f'dur="{4 + row}s" repeatCount="indefinite"/></rect>')
+    else:
+        drawing = ('<rect y="9" width="16" height="29" rx="3"/><path d="M5 32h6 M16 23h22m23 0h17"/>'
+                   '<rect x="38" y="12" width="23" height="21" rx="2"/><path d="M42 18h15m-15 7h15"/>'
+                   '<rect x="78" y="12" width="26" height="19" rx="2"/><path d="M91 31v6m-7 0h14"/>'
+                   f'<circle cx="25" cy="23" r="3" fill="{accent}" stroke="none">'
+                   '<animate attributeName="cx" values="19;36;64;76" dur="3s" repeatCount="indefinite"/></circle>')
+    return f'<g transform="translate(735 82)" fill="none" stroke="{ink}" stroke-width="1.7">{drawing}</g>'
+
+
+def project(t, i, slug, name, lines, tags) -> str:
     d, H = Doc(t), 150
     b = [d.dm(f"{i + 1:02d}", 40, 40, 4, t["accent"]),
          d.dm(name, 120, 35, 5, t["fg"])]
@@ -230,6 +253,7 @@ def project(t, i, name, lines, tags) -> str:
                  + d.mono(tag, x + w / 2, 50, 11, t["fg"], anchor="middle", ls=1.5))
         x -= 8
     b.append(d.dm("↗", W - 70, 35, 4, t["accent"]))
+    b.append(project_diagram(t, slug))
     return d.svg(H, f"{name} — {' '.join(lines)}", "".join(b), grid=False)
 
 
@@ -245,6 +269,19 @@ def cycle(i: int, n: int, period: float) -> str:
         vals, kts = "0;1;0", f"0;{a:.4f};{b:.4f}"
     return (f'<animate attributeName="opacity" values="{vals}" keyTimes="{kts}" '
             f'dur="{period}s" calcMode="discrete" repeatCount="indefinite"/>')
+
+
+def compact_stack(t):
+    d = Doc(t)
+    rows = [d.dm("STACK", 54, 42, 6, t["fg"])]
+    for i, (category, items) in enumerate(STACK):
+        y = 155 + i * 175
+        rows.append(d.mono(category, 54, y, 27, t["accent"], ls=2))
+        names = [item for item in items if item]
+        for line, start in enumerate(range(0, len(names), 3)):
+            rows.append(d.mono("  ·  ".join(names[start:start + 3]), 54,
+                               y + 53 + line * 44, 35, t["fg"]))
+    return d.svg(160 + len(STACK) * 175, "Stack inventory", "".join(rows))
 
 
 def stack(t) -> str:
@@ -408,8 +445,9 @@ def main():
         for name, t in THEMES.items():
             write(A / f"hero-{name}.svg", hero(t))
             write(A / f"stack-{name}.svg", stack(t))
+            write(A / f"stack-mobile-{name}.svg", compact_stack(t))
             for i, (slug, pname, lines, tags) in enumerate(PROJECTS):
-                write(A / f"project-{slug}-{name}.svg", project(t, i, pname, lines, tags))
+                write(A / f"project-{slug}-{name}.svg", project(t, i, slug, pname, lines, tags))
     else:
         token = os.environ.get("GITHUB_TOKEN")
         if not token:

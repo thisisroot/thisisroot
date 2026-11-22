@@ -36,6 +36,8 @@
 <br />
 
 <picture>
+  <source media="(max-width: 600px) and (prefers-color-scheme: dark)" srcset="./assets/stack-mobile-dark.svg" />
+  <source media="(max-width: 600px)" srcset="./assets/stack-mobile-light.svg" />
   <source media="(prefers-color-scheme: dark)" srcset="./assets/stack-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="./assets/stack-light.svg" />
   <img src="./assets/stack-dark.svg" width="100%" alt="Stack — languages: Rust, Dart, Go, TypeScript, Python · frameworks: Flutter, Axum, React, Django · protocols: REST, WebSockets, OpenAPI, JSON Schema, MLS · tooling: Docker, PostgreSQL, Linux, Git, Neovim" />
